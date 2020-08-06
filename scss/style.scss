@@ -33,7 +33,7 @@
     }
 
     .banner-title {
-      @include font(bold,50px,'UTM BryantLG',61px,#$hapo_title_color);
+      @include font(bold,50px,'UTM BryantLG',61px,$hapo_title_color);
     }
 
     .banner-des {
@@ -89,33 +89,42 @@
 }
 
 .social {
-
-  a {
-    margin-left: 25px;
+  .social-link {
+    margin-right: 30px;
     width: 50px;
-    color: $main_footer_color;
-    transition: all ease-in-out .5s;
-
+    height: 50px;
+    border-radius: 50%;
+    
     &:hover {
-      width: 270px;
-      cursor: pointer;
-      color: $main_footer_color;
-      text-decoration: underline;
-    }
-
-    img {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-    }
-
-    p {
-      margin-left: 5px;
-      overflow: hidden;
-      @include font(normal,20px,'UTM BryantLG',25px,$main_footer_color);
+      transform: scale(1.1);
     }
   }
 }
+  // a {
+  //   margin-left: 25px;
+  //   width: 50px;
+  //   color: $main_footer_color;
+  //   transition: all ease-in-out .5s;
+
+  //   &:hover {
+  //     width: 270px;
+  //     cursor: pointer;
+  //     color: $main_footer_color;
+  //     text-decoration: underline;
+  //   }
+
+  //   img {
+  //     width: 50px;
+  //     height: 50px;
+  //     border-radius: 50%;
+  //   }
+
+  //   p {
+  //     margin-left: 5px;
+  //     overflow: hidden;
+  //     @include font(normal,20px,'UTM BryantLG',25px,$main_footer_color);
+  //   }
+  // }
 
 .copy-right {
   background-color: #454545;

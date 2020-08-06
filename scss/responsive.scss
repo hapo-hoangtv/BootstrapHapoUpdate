@@ -57,19 +57,10 @@
   }
 
   .social {
-    margin: auto;
-
-    a {
-      margin: 0;
-
-      img {
-        width: 40px;
-        height: 40px;
-      }
-
-      p {
-        @include font(normal, 18px, 'UTM BryantLG', 20px, $main_footer_color);
-      }
+    .social-link {
+      margin-right: 15px;
+      width: 40px;
+      height: 40px;
     }
   }
 
@@ -359,18 +350,10 @@
     margin-bottom: 50px;
     margin-left: -35px;
 
-    a {
-      margin-right: -10px;
-      margin-top: -15px;
-
-      img {
-        width: 30px;
-        height: 30px;
-      }
-
-      p {
-        @include font(normal, 16px, 'UTM BryantLG', 18px, $main_footer_color);
-      }
+    .social-link {
+      margin-right: 10px;
+      width: 30px;
+      height: 30px;
     }
   }
 

@@ -25,6 +25,10 @@ $(document).ready(function(){
     });
 });
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+})
+
 function closeMes(id) {
   var closeBoxchat = document.getElementById(id);
   closeBoxchat.style.display = "none";
