@@ -1,9 +1,11 @@
 @media only screen and (max-width: 768px) {
-  .img-logo {
-    width: 300px;
-    height: auto;
-    margin: 20px;
+  .logo-header {
+    .img-logo {
+      width: 50%;
+      margin: 20px;
+    }
   }
+  
 
   .banner {
     height: 350px;
@@ -264,12 +266,16 @@
 }
 
 @media only screen and (max-width: 425px) {
-  .img-logo {
-    width: 150px;
-    height: auto;
-    margin: 0;
-    transform: translateY(-100%);
+  .logo-header {
+    margin-bottom: -30px;
+
+    .img-logo {
+      margin: 0px;
+      width: 60%;
+      transform: translateY(-100%);
+    }
   }
+  
   .nav-menu {
     a {
       text-align: center;

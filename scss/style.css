@@ -40,7 +40,7 @@ a {
 .logo-header {
   margin-left: -40px; }
   .logo-header .img-logo {
-    height: 70px; }
+    width: 90%; }
 
 .nav-menu li {
   margin: 10px; }
@@ -424,9 +424,8 @@ a {
   color: #FFFFFF; }
 
 @media only screen and (max-width: 768px) {
-  .img-logo {
-    width: 300px;
-    height: auto;
+  .logo-header .img-logo {
+    width: 50%;
     margin: 20px; }
 
   .banner {
@@ -617,11 +616,12 @@ a {
     .control-next .next-right {
       margin-right: 74px; } }
 @media only screen and (max-width: 425px) {
-  .img-logo {
-    width: 150px;
-    height: auto;
-    margin: 0;
-    transform: translateY(-100%); }
+  .logo-header {
+    margin-bottom: -30px; }
+    .logo-header .img-logo {
+      margin: 0px;
+      width: 60%;
+      transform: translateY(-100%); }
 
   .nav-menu a {
     text-align: center; }
