@@ -42,6 +42,7 @@ a {
   #collapsibleNavbar .hapo-menu a {
     padding: 8px 10px;
     text-transform: uppercase;
+    -webkit-text-stroke-width: 0.3px;
     font: bold 14px "Open Sans";
     line-height: 19px;
     color: #505353; }
@@ -121,7 +122,8 @@ a {
   padding-top: 5px;
   border-radius: 50%; }
   .social .social-link:hover {
-    transform: scale(1.1); }
+    transform: scale(1.1);
+    cursor: pointer; }
 
 .copy-right {
   background-color: #454545;
@@ -135,24 +137,27 @@ a {
 
 .hapo-question {
   margin-top: 100px;
-  background-image: url("../image/Rectangle17.png");
-  background-size: cover; }
+  background: url("../image/Rectangle17.png") no-repeat center/cover; }
   .hapo-question .question-logo {
-    margin-top: -270px;
+    position: absolute;
+    margin-top: -250px;
     margin-left: -15px; }
   .hapo-question .hapo-question-why {
     -webkit-text-stroke: 1px;
+    margin-right: 25px;
     font: bold 65px "UTM BryantLG";
     line-height: 86px;
     color: #FFFFFF; }
   .hapo-question .hapo-question-body {
-    margin-top: -170px;
+    margin-top: 210px;
     text-align: right;
+    position: relative;
     font: normal 20px "UTM BryantLG";
     line-height: 40px;
     color: #FFFFFF; }
   .hapo-question .question-why-right {
-    margin-top: -220px; }
+    position: relative;
+    margin-top: 125px; }
 
 .banner-second {
   padding-bottom: 120px;
@@ -359,10 +364,14 @@ a {
 .next-left {
   margin-left: -12px;
   background-color: white; }
+  .next-left:hover {
+    cursor: pointer; }
 
 .next-right {
   margin-right: -12px;
   background-color: white; }
+  .next-right:hover {
+    cursor: pointer; }
 
 .hapolearn-message {
   position: fixed;
@@ -509,14 +518,16 @@ a {
       color: #B2D235; }
 
   .hapo-question .question-logo {
-    margin-top: -145px; }
+    margin-top: -135px; }
   .hapo-question .hapo-question-why {
     margin-top: 20px;
+    margin-left: 200px;
     font: bold 50px "UTM BryantLG";
     line-height: 61px;
     color: #FFFFFF; }
   .hapo-question .hapo-question-body {
-    margin-top: -40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     text-align: center;
     font: normal 16px "UTM BryantLG";
     line-height: 35px;
@@ -527,8 +538,7 @@ a {
     transform: scale(1.1);
     position: relative;
     right: 20px;
-    margin-top: -40px;
-    margin-bottom: 20px; }
+    margin-top: 20px; }
 
   .hapolearn-courses .subject-courses {
     margin: 0 8px; }
@@ -716,7 +726,8 @@ a {
     margin-top: 90px; }
     .hapo-question .hapo-question-why {
       margin-bottom: 15px;
-      font: bold 38px "UTM BryantLG";
+      padding: 10px 0;
+      font: bold 37px "UTM BryantLG";
       line-height: 40px;
       color: #FFFFFF; }
     .hapo-question .question-logo {

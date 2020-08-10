@@ -6,6 +6,7 @@
        a {
           padding: 8px 10px;
           text-transform: uppercase;
+          -webkit-text-stroke-width: 0.3px;
           @include font(bold,14px,"Open Sans",19px,$card_text_color);
         } 
     }
@@ -108,6 +109,7 @@
 
     &:hover {
       transform: scale(1.1);
+      cursor: pointer;
     }
   }
 }
@@ -126,27 +128,32 @@
 
 .hapo-question {
   margin-top: 100px;
-  background-image: url('../image/Rectangle17.png');
-  background-size: cover;
+  background : url('../image/Rectangle17.png') no-repeat center/cover;
     
   .question-logo {
-    margin-top: -270px;
+    position: absolute;
+    margin-top: -250px;
     margin-left: -15px;
   }
 
   .hapo-question-why {
     -webkit-text-stroke: 1px;
+    margin-right: 25px;
     @include font(bold,65px,'UTM BryantLG',86px,$main_footer_color);
   }
 
   .hapo-question-body {
-    margin-top: -170px;
+    // margin-top: -170px;
+    margin-top: 210px;
     text-align: right;
+    position: relative;
     @include font(normal,20px,'UTM BryantLG',40px,$main_footer_color);
   }
 
   .question-why-right {
-    margin-top: -220px;
+    position: relative;
+    margin-top: 125px;
+    // margin-top: -220px;
   }
 }
 //end question
@@ -416,11 +423,19 @@
 .next-left {
   margin-left: -12px;
   background-color: white;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .next-right {
   margin-right: -12px;
   background-color: white;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 //end feedback
 
