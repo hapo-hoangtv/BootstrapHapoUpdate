@@ -146,7 +146,7 @@
     }
 
     .question-why-right {
-      transform: scale(1.2);
+      transform: scale(1.1);
       position: relative;
       right: 20px;
       margin-top: -40px;
@@ -266,6 +266,7 @@
   .navbar-light .navbar-toggler {
     color: black;
     border-color: white;
+    margin-left: -20px;
   }
   
   .banner {
@@ -332,13 +333,13 @@
 
   .social {
     order: 4;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
     margin-left: -20px;
 
     .social-link {
       margin-right: 10px;
       width: auto;
-      height: 30px;
+      height: 37px;
     }
   }
   //endfooter

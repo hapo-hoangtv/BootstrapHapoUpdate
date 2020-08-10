@@ -524,7 +524,7 @@ a {
     .hapo-question .hapo-question-body img {
       height: 15px; }
   .hapo-question .question-why-right {
-    transform: scale(1.2);
+    transform: scale(1.1);
     position: relative;
     right: 20px;
     margin-top: -40px;
@@ -604,7 +604,8 @@ a {
 
   .navbar-light .navbar-toggler {
     color: black;
-    border-color: white; }
+    border-color: white;
+    margin-left: -20px; }
 
   .banner .hapo-banner {
     transform: translateY(100%);
@@ -656,12 +657,12 @@ a {
 
   .social {
     order: 4;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
     margin-left: -20px; }
     .social .social-link {
       margin-right: 10px;
       width: auto;
-      height: 30px; }
+      height: 37px; }
 
   .banner-second {
     padding-bottom: 50px; }
