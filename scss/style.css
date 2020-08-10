@@ -8,12 +8,12 @@ body {
   font-family: "UTM BryantLG";
   font-style: normal;
   font-weight: normal;
-  src: url("/font/UTMBryantLG.ttf"); }
+  src: url("../font/UTMBryantLG.ttf"); }
 @font-face {
-  font-family: "Open Sans" sans-serif;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
-  src: url("/font/OpenSans-Bold.ttf"); }
+  src: url("../font/OpenSans-Regular.ttf"); }
 * {
   margin: 0;
   padding: 0; }
@@ -37,34 +37,33 @@ li {
 a {
   text-decoration: none; }
 
-.logo-header {
-  margin-left: -40px; }
-  .logo-header .img-logo {
-    width: 90%; }
+#collapsibleNavbar .hapo-menu {
+  text-align: center; }
+  #collapsibleNavbar .hapo-menu a {
+    padding: 8px 10px;
+    text-transform: uppercase;
+    font: bold 14px "Open Sans";
+    line-height: 19px;
+    color: #505353; }
 
-.nav-menu li {
-  margin: 10px; }
-.nav-menu a {
-  text-transform: uppercase;
+.hapo-menu .nav-item:hover a {
   border-radius: 17px;
-  font: bold 14px "Open Sans";
-  line-height: 19px;
-  color: #505353; }
-  .nav-menu a:hover {
-    background-color: #B2D235;
-    color: #FFFFFF; }
+  background-color: #B2D235;
+  color: #FFFFFF !important; }
+
+.hapo-menu .nav-item {
+  margin: 0 10px; }
 
 .banner {
-  height: 655px;
   background: url("../image/Rectangle 1.png") no-repeat center/cover; }
   .banner .hapo-banner {
-    margin-left: 35px;
-    transform: translateY(70%); }
+    padding: 160px 0 180px 55px; }
     .banner .hapo-banner .banner-learn {
       font: normal 50px "UTM BryantLG";
       line-height: 61px;
       color: #11114E; }
     .banner .hapo-banner .banner-title {
+      -webkit-text-stroke-width: 1px;
       font: bold 50px "UTM BryantLG";
       line-height: 61px;
       color: #11114E; }
@@ -89,20 +88,24 @@ a {
         opacity: 0.8; }
 
 .main-footer {
+  padding-bottom: 20px;
+  padding-top: 20px;
   background-color: #505353; }
 
 .footer-logo {
-  display: block; }
+  display: block;
+  padding: 25px 77px; }
 
 .footer-logo-note {
+  letter-spacing: -0.05em;
+  margin-left: 135px;
+  margin-top: -20px;
   font: normal 20px "UTM BryantLG";
   line-height: 25px;
-  color: #FFFFFF;
-  letter-spacing: -0.05em;
-  margin-left: 85px; }
+  color: #FFFFFF; }
 
 .footer-menu {
-  padding: 10px; }
+  padding: 25px 10px; }
   .footer-menu a {
     font: bold 20px "UTM BryantLG";
     line-height: 25px;
@@ -115,8 +118,7 @@ a {
 
 .social .social-link {
   margin-right: 30px;
-  width: 50px;
-  height: 50px;
+  padding-top: 5px;
   border-radius: 50%; }
   .social .social-link:hover {
     transform: scale(1.1); }
@@ -132,34 +134,25 @@ a {
     color: #FFFFFF; }
 
 .hapo-question {
-  background: url("../image/Rectangle 17.png") no-repeat center/cover; }
+  margin-top: 100px;
+  background-image: url("../image/Rectangle17.png");
+  background-size: cover; }
   .hapo-question .question-logo {
-    margin-top: -225px; }
-  .hapo-question .question-why-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    .hapo-question .question-why-left .hapo-question-title {
-      letter-spacing: -0.02em;
-      text-align: center;
-      font: bold 70px "UTM BryantLG";
-      line-height: 86px;
-      color: #FFFFFF; }
-    .hapo-question .question-why-left .hapo-question-body .reason {
-      margin-left: 90px;
-      margin-top: 30px;
-      font: normal 20px "UTM BryantLG";
-      line-height: 25px;
-      color: #FFFFFF; }
-    .hapo-question .question-why-left .hapo-question-body a {
-      color: #FFFFFF; }
-      .hapo-question .question-why-left .hapo-question-body ahover {
-        text-decoration: underline; }
-  .hapo-question .question-why-right .hapo-why-right {
-    object-fit: cover; }
-
-.hapo-question .why-one .hapo-question-why {
-  opacity: 0; }
+    margin-top: -270px;
+    margin-left: -15px; }
+  .hapo-question .hapo-question-why {
+    -webkit-text-stroke: 1px;
+    font: bold 65px "UTM BryantLG";
+    line-height: 86px;
+    color: #FFFFFF; }
+  .hapo-question .hapo-question-body {
+    margin-top: -170px;
+    text-align: right;
+    font: normal 20px "UTM BryantLG";
+    line-height: 40px;
+    color: #FFFFFF; }
+  .hapo-question .question-why-right {
+    margin-top: -220px; }
 
 .banner-second {
   padding-bottom: 120px;
@@ -170,7 +163,7 @@ a {
     line-height: 74px;
     color: #FFFFFF; }
   .banner-second .btn-start-learn {
-    padding: 10px 30px;
+    padding: 10px 45px;
     margin-top: 20px;
     background-color: white;
     border-radius: 40px;
@@ -185,6 +178,7 @@ a {
 
 .hapo-title {
   margin-top: 80px;
+  -webkit-text-stroke: 2px;
   font: bold 80px "UTM BryantLG";
   line-height: 98px;
   color: #11114E; }
@@ -193,19 +187,16 @@ a {
     border-radius: 3px;
     padding-bottom: 10px; }
 
-.statistic {
-  margin-bottom: 50px; }
-  .statistic .statistic-body .statistic-learn {
-    margin-top: 50px;
-    letter-spacing: -0.05em; }
-    .statistic .statistic-body .statistic-learn span {
-      font: bold 60px "UTM BryantLG";
-      line-height: 74px;
-      color: #505353; }
-    .statistic .statistic-body .statistic-learn p {
-      font: bold 60px "UTM BryantLG";
-      line-height: 74px;
-      color: #B2D235; }
+.statistic .statistic-body .statistic-learn {
+  letter-spacing: -0.05em; }
+  .statistic .statistic-body .statistic-learn span {
+    font: bold 60px "UTM BryantLG";
+    line-height: 74px;
+    color: #505353; }
+  .statistic .statistic-body .statistic-learn p {
+    font: bold 60px "UTM BryantLG";
+    line-height: 74px;
+    color: #B2D235; }
 
 .hapo-banner-space {
   height: 160px;
@@ -220,27 +211,24 @@ a {
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); }
   .hapolearn-courses .subject-courses .hapolearn-subject {
-    height: 45%;
+    height: 50%;
     object-fit: contain;
+    padding: 12% 20%;
     border-radius: 15px 15px 0 0; }
   .hapolearn-courses .subject-courses .subject-html {
-    padding: 45px 72px;
     background-color: #3F6185; }
   .hapolearn-courses .subject-courses .subject-laravel {
-    padding: 45px 93px;
     background-color: #DC594C; }
   .hapolearn-courses .subject-courses .subject-php {
-    padding: 45px 72px;
     background-color: #556598; }
 
 .hapolearn-card-title {
-  text-align: center;
+  -webkit-text-stroke: 0.8px;
   font: bold 25px "UTM BryantLG";
   line-height: 37px;
   color: #B2D235; }
 
 .hapolearn-card-text {
-  text-align: center;
   font: bold 14px "UTM BryantLG";
   line-height: 20px;
   color: #505353; }
@@ -269,20 +257,19 @@ a {
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); }
   .hapolearn-othercourses .subject-courses .hapolearn-subject {
-    height: 45%;
+    height: 50%;
     object-fit: contain;
+    padding: 12% 20%;
     border-radius: 15px 15px 0 0; }
   .hapolearn-othercourses .subject-courses .subject-css {
-    padding: 35px 86px;
     background-color: #24ABE2; }
   .hapolearn-othercourses .subject-courses .subject-rails {
-    padding: 54px 62px;
     background-color: #DC594C; }
   .hapolearn-othercourses .subject-courses .subject-java {
-    padding: 17px 55px;
     background-color: #1B75BB; }
 
 .hapo-all-courses {
+  -webkit-text-stroke: 1px;
   font: bold 40px "UTM BryantLG";
   line-height: 49px;
   color: #90AB26; }
@@ -300,7 +287,7 @@ a {
 
 .hapo-feedback-des {
   margin: 23px auto 40px auto;
-  padding: 0 240px;
+  padding: 0 235px;
   letter-spacing: -0.02em;
   font: normal 25px "UTM BryantLG";
   line-height: 31px;
@@ -337,7 +324,7 @@ a {
 
 .feedback-user {
   margin-top: 25px;
-  margin-left: 10px; }
+  margin-left: 35px; }
   .feedback-user img {
     height: 60px; }
 
@@ -424,74 +411,81 @@ a {
   color: #FFFFFF; }
 
 @media only screen and (max-width: 768px) {
-  .logo-header .img-logo {
-    width: 50%;
-    margin: 20px; }
+  #collapsibleNavbar
+  .hapo-menu .nav-item {
+    font-size: 14px;
+    margin: 10px 5px;
+    padding-right: 10px;
+    padding-bottom: 10px; }
+  #collapsibleNavbar
+  .hapo-menu a {
+    padding: 8px 11px; }
 
-  .banner {
-    height: 350px; }
-    .banner .hapo-banner {
-      transform: translateY(25%);
-      margin-left: 30px; }
-      .banner .hapo-banner .banner-learn {
-        font: normal 30px "UTM BryantLG";
-        line-height: 37px;
-        color: #11114E; }
-      .banner .hapo-banner .banner-title {
-        font: bold 30px "UTM BryantLG";
-        line-height: 37px;
-        color: #11114E; }
-        .banner .hapo-banner .banner-title img {
-          width: 35px;
-          height: 35px; }
-      .banner .hapo-banner .banner-des {
-        letter-spacing: -0.05em;
-        height: 40px;
-        margin-top: 10px;
-        font: normal 16px "UTM BryantLG";
-        line-height: 20px;
-        color: #505353; }
-      .banner .hapo-banner .btn-start {
-        padding: 12px 40px;
-        margin-top: 20px;
-        -webkit-text-stroke-width: 0.5px;
-        font: normal 16px "UTM BryantLG";
-        line-height: 20px;
-        color: #FFFFFF; }
+  .banner .hapo-banner {
+    padding: 55px 0 100px 20px; }
+    .banner .hapo-banner .banner-learn {
+      font: normal 30px "UTM BryantLG";
+      line-height: 37px;
+      color: #11114E; }
+    .banner .hapo-banner .banner-title {
+      -webkit-text-stroke-width: 1px;
+      font: bold 30px "UTM BryantLG";
+      line-height: 37px;
+      color: #11114E; }
+      .banner .hapo-banner .banner-title img {
+        width: 35px;
+        height: 35px; }
+    .banner .hapo-banner .banner-des {
+      letter-spacing: -0.05em;
+      height: 40px;
+      margin-top: 10px;
+      font: normal 16px "UTM BryantLG";
+      line-height: 20px;
+      color: #505353; }
+    .banner .hapo-banner .btn-start {
+      padding: 12px 40px;
+      margin-top: 20px;
+      -webkit-text-stroke-width: 0.5px;
+      font: normal 16px "UTM BryantLG";
+      line-height: 20px;
+      color: #FFFFFF; }
 
-  .footer-menu a {
-    font: normal 18px "UTM BryantLG";
-    line-height: 22px;
-    color: #FFFFFF; }
+  .footer-menu {
+    padding: 25px 0px; }
+    .footer-menu a {
+      padding: 10px 0;
+      font: bold 18px "UTM BryantLG";
+      line-height: 22px;
+      color: #FFFFFF; }
 
   .footer-logo-note {
-    margin-left: 45px;
+    margin-left: 20px;
     font: normal 16px "UTM BryantLG";
     line-height: 20px;
     color: #FFFFFF; }
 
   .footer-logo {
-    margin-bottom: 3px; }
+    padding: 5px 15px;
+    margin-top: 15px;
+    margin-bottom: 15px; }
 
   .social .social-link {
     margin-right: 15px;
-    width: 40px;
+    width: auto;
     height: 40px; }
 
   .banner-second {
     padding-bottom: 80px; }
     .banner-second .become-title {
       padding-top: 40px;
-      font: bold 35px "UTM BryantLG";
-      line-height: 43px;
-      color: #FFFFFF; }
+      font-size: 35px;
+      line-height: 43px; }
     .banner-second .btn-start-learn {
-      padding: 10px;
+      padding: 10px 30px;
       margin-top: 20px;
       border-radius: 35px;
-      font: bold 20px "UTM BryantLG";
-      line-height: 25px;
-      color: #90AB26; }
+      font-size: 20px;
+      line-height: 25px; }
 
   .hapo-title {
     margin-top: 60px;
@@ -504,7 +498,6 @@ a {
       padding-bottom: 10px; }
 
   .statistic .statistic-body .statistic-learn {
-    margin-top: 28px;
     letter-spacing: -0.05em; }
     .statistic .statistic-body .statistic-learn span {
       font: bold 40px "UTM BryantLG";
@@ -516,47 +509,34 @@ a {
       color: #B2D235; }
 
   .hapo-question .question-logo {
-    margin-top: -150px; }
-  .hapo-question .question-why-left {
-    display: flex;
-    justify-content: center; }
-    .hapo-question .question-why-left .hapo-question-body {
-      margin-top: -150px; }
-      .hapo-question .question-why-left .hapo-question-body .reason {
-        letter-spacing: -0.05em;
-        margin-left: 20px;
-        margin-top: 15px;
-        font: normal 16px "UTM BryantLG";
-        line-height: 20px;
-        color: #FFFFFF; }
-    .hapo-question .question-why-left .hapo-question-body .fontv {
-      height: 20px; }
-  .hapo-question .question-why-right .hapo-why-right {
-    height: 259px; }
-
-  .hapo-question .why-one .hapo-question-why {
-    margin-top: 37px;
-    opacity: 1;
+    margin-top: -145px; }
+  .hapo-question .hapo-question-why {
+    margin-top: 20px;
     font: bold 50px "UTM BryantLG";
     line-height: 61px;
     color: #FFFFFF; }
-  .hapo-question .why-two {
-    margin-top: -60px; }
-    .hapo-question .why-two .hapo-question-title {
-      opacity: 0; }
+  .hapo-question .hapo-question-body {
+    margin-top: -40px;
+    text-align: center;
+    font: normal 16px "UTM BryantLG";
+    line-height: 35px;
+    color: #FFFFFF; }
+    .hapo-question .hapo-question-body img {
+      height: 15px; }
+  .hapo-question .question-why-right {
+    transform: scale(1.2);
+    position: relative;
+    right: 20px;
+    margin-top: -40px;
+    margin-bottom: 20px; }
 
   .hapolearn-courses .subject-courses {
     margin: 0 8px; }
     .hapolearn-courses .subject-courses .hapolearn-subject {
-      height: 35%; }
-    .hapolearn-courses .subject-courses .subject-html {
-      padding: 24px 40px 22px 34px; }
-    .hapolearn-courses .subject-courses .subject-laravel {
-      padding: 27px 57px; }
-    .hapolearn-courses .subject-courses .subject-php {
-      padding: 25px 39px 23px 37px; }
+      height: 45%; }
 
   .hapolearn-card-title {
+    -webkit-text-stroke-width: 1px;
     font: bold 19px "UTM BryantLG";
     line-height: 25px;
     color: #B2D235; }
@@ -564,11 +544,12 @@ a {
   .hapolearn-card-text {
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 39%;
+    height: 47%;
     -webkit-line-clamp: 4;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    font: normal 14px "UTM BryantLG";
+    letter-spacing: -0.05em;
+    font: bold 14px "UTM BryantLG";
     line-height: 18px;
     color: #505353; }
 
@@ -584,13 +565,9 @@ a {
   .hapolearn-othercourses .subject-courses {
     margin: 0 8px; }
     .hapolearn-othercourses .subject-courses .hapolearn-subject {
-      height: 35%; }
-    .hapolearn-othercourses .subject-courses .subject-css {
-      padding: 22px 27px 11px 41px; }
-    .hapolearn-othercourses .subject-courses .subject-rails {
-      padding: 36px 27px 38px 31px; }
-    .hapolearn-othercourses .subject-courses .subject-java {
-      padding: 13px 25px 13px 32px; }
+      height: 45%; }
+    .hapolearn-othercourses .subject-courses .hapolearn-card-text {
+      height: 48%; }
 
   .hapo-all-courses {
     letter-spacing: -0.02em;
@@ -601,93 +578,89 @@ a {
       width: 34px;
       height: 19px; }
 
-  .hapo-feedback-des {
+  .hapo-feedback .hapo-feedback-des {
     font-size: 18px;
     line-height: 22px;
-    padding: 0 120px; }
-
-  .feedback-detail .feedback-des {
-    padding: 15px 101px 144px 97px; }
+    padding: 0 105px; }
+  .hapo-feedback .feedback-comment {
+    margin: 10px 50px; }
+    .hapo-feedback .feedback-comment:after {
+      top: 56%; }
+    .hapo-feedback .feedback-comment:before {
+      top: 57%; }
+  .hapo-feedback .feedback-user {
+    margin-left: 88px; }
 
   .control-next {
-    margin-top: -340px; }
+    margin-top: -200px; }
     .control-next .next-left {
-      margin-left: 70px; }
+      margin-left: 28px; }
     .control-next .next-right {
-      margin-right: 74px; } }
+      margin-right: 28px; } }
 @media only screen and (max-width: 425px) {
-  .logo-header {
-    margin-bottom: -30px; }
-    .logo-header .img-logo {
-      margin: 0px;
-      width: 60%;
-      transform: translateY(-100%); }
+  .hapo-menu .nav-item:hover a {
+    background-color: transparent;
+    color: #B2D235 !important; }
 
-  .nav-menu a {
-    text-align: center; }
-    .nav-menu a:hover {
-      color: #B2D235;
-      background-color: #FFFFFF; }
+  .navbar-light .navbar-toggler {
+    color: black;
+    border-color: white; }
 
-  .banner {
-    height: 200px; }
-    .banner .hapo-banner {
-      transform: translateY(100%);
-      margin-left: 40px;
-      margin-bottom: 5px;
+  .banner .hapo-banner {
+    transform: translateY(100%);
+    padding: 8px 55px;
+    margin-bottom: 5px;
+    justify-content: center; }
+    .banner .hapo-banner .banner-learn {
+      font: normal 25px "UTM BryantLG";
+      line-height: 31px;
+      color: #11114E; }
+    .banner .hapo-banner .banner-title {
+      font: bold 25px "UTM BryantLG";
+      line-height: 31px;
+      color: #11114E; }
+      .banner .hapo-banner .banner-title img {
+        width: 35px;
+        height: 35px; }
+    .banner .hapo-banner .banner-des {
+      letter-spacing: -0.05em;
+      height: 40px;
+      margin-top: 10px;
+      font: normal 16px "UTM BryantLG";
+      line-height: 20px;
+      color: #505353; }
+    .banner .hapo-banner .btn-start {
+      padding: 12px 40px;
+      margin-top: 20px;
+      font: bold 18px "UTM BryantLG";
+      line-height: 22px;
+      color: #FFFFFF; }
+    .banner .hapo-banner a {
+      display: flex;
       justify-content: center; }
-      .banner .hapo-banner .banner-learn {
-        font: normal 30px "UTM BryantLG";
-        line-height: 37px;
-        color: #11114E; }
-      .banner .hapo-banner .banner-title {
-        font: bold 30px "UTM BryantLG";
-        line-height: 37px;
-        color: #11114E; }
-        .banner .hapo-banner .banner-title img {
-          width: 35px;
-          height: 35px; }
-      .banner .hapo-banner .banner-des {
-        letter-spacing: -0.05em;
-        height: 40px;
-        margin-top: 10px;
-        font: normal 16px "UTM BryantLG";
-        line-height: 20px;
-        color: #505353; }
-      .banner .hapo-banner .btn-start {
-        padding: 12px 40px;
-        margin-top: 20px;
-        font: bold 18px "UTM BryantLG";
-        line-height: 22px;
-        color: #FFFFFF; }
-      .banner .hapo-banner a {
-        display: flex;
-        justify-content: center; }
 
   .footer-menu {
-    padding: 15px;
-    margin-bottom: 20px; }
-
-  .footer-logo img {
-    max-width: 80%;
-    margin-left: 20px; }
+    padding: 20px; }
 
   .footer-des {
     order: 3;
     margin-bottom: 50px; }
     .footer-des p {
-      margin-left: 25px;
+      margin-left: 16px;
       font: normal 14px "UTM BryantLG";
       line-height: 17px;
       color: #FFFFFF; }
+    .footer-des .footer-logo img {
+      max-width: 80%;
+      padding-bottom: 5px; }
 
   .social {
     order: 4;
     margin-bottom: 50px;
-    margin-left: -35px; }
+    margin-left: -20px; }
     .social .social-link {
       margin-right: 10px;
-      width: 30px;
+      width: auto;
       height: 30px; }
 
   .banner-second {
@@ -695,17 +668,15 @@ a {
     .banner-second .become-title {
       padding-top: 34px;
       letter-spacing: -0.02em;
-      font: bold 23px "UTM BryantLG";
-      line-height: 28px;
-      color: #FFFFFF; }
+      font-size: 23px;
+      line-height: 28px; }
     .banner-second .btn-start-learn {
-      padding: 7px;
+      padding: 7px 20px;
       margin-top: 15px;
       letter-spacing: -0.05em;
       border-radius: 35px;
-      font: bold 18px "UTM BryantLG";
-      line-height: 22px;
-      color: #90AB26; }
+      font-size: 18px;
+      line-height: 22px; }
 
   .hapo-title {
     margin-top: 50px;
@@ -718,51 +689,49 @@ a {
       border-radius: 3px;
       padding-bottom: 10px; }
 
-  .statistic .statistic-body {
+  .statistic {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .statistic .statistic-body .statistic-learn {
-      margin-top: 26px;
-      letter-spacing: -0.05em; }
-      .statistic .statistic-body .statistic-learn span {
-        font: bold 40px "UTM BryantLG";
-        line-height: 49px;
-        color: #505353; }
-      .statistic .statistic-body .statistic-learn p {
-        font: bold 40px "UTM BryantLG";
-        line-height: 49px;
-        color: #B2D235; }
+    .statistic .statistic-body {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px; }
+      .statistic .statistic-body .statistic-learn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        letter-spacing: -0.05em; }
+        .statistic .statistic-body .statistic-learn span {
+          font: bold 40px "UTM BryantLG";
+          line-height: 49px;
+          color: #505353; }
+        .statistic .statistic-body .statistic-learn p {
+          font: bold 40px "UTM BryantLG";
+          line-height: 49px;
+          color: #B2D235; }
 
   .hapo-question {
-    margin-top: 220px; }
+    margin-top: 90px; }
+    .hapo-question .hapo-question-why {
+      margin-bottom: 15px;
+      font: bold 38px "UTM BryantLG";
+      line-height: 40px;
+      color: #FFFFFF; }
     .hapo-question .question-logo {
-      margin-top: -100px; }
-    .hapo-question .question-why-left .hapo-question-body {
-      margin-left: 24px; }
-      .hapo-question .question-why-left .hapo-question-body .reason {
-        letter-spacing: -0.05em;
-        margin-top: 15px;
-        font: normal 14px "UTM BryantLG";
-        line-height: 17px;
-        color: #FFFFFF; }
-    .hapo-question .question-why-left .hapo-question-body .fontv {
-      height: 18px; }
-    .hapo-question .question-why-right .hapo-why-right {
-      height: 218px;
-      margin-left: 30px; }
-
-  .hapo-question .why-one .hapo-question-why {
-    margin-top: 30px;
-    margin-left: -45px;
-    opacity: 1;
-    font: bold 40px "UTM BryantLG";
-    line-height: 40px;
-    color: #FFFFFF; }
-  .hapo-question .why-two {
-    padding-top: 50px; }
-    .hapo-question .why-two .hapo-question-title {
-      opacity: 0; }
+      margin-top: -100px;
+      height: 226px; }
+    .hapo-question .hapo-question-body {
+      margin-top: -10px;
+      text-align: center;
+      font: normal 14px "UTM BryantLG";
+      line-height: 27px;
+      color: #FFFFFF; }
+    .hapo-question .question-why-right {
+      transform: scale(1);
+      position: relative;
+      margin-top: -20px;
+      margin-left: 20px; }
 
   .hapo-subject {
     margin-top: -80px;
@@ -771,9 +740,8 @@ a {
   .hapolearn-courses {
     align-items: center; }
     .hapolearn-courses .subject-courses {
+      margin-left: 0;
       margin-bottom: 30px; }
-      .hapolearn-courses .subject-courses .hapolearn-subject {
-        height: 45%; }
       .hapolearn-courses .subject-courses .subject-html {
         padding: 34px 54px; }
       .hapolearn-courses .subject-courses .subject-laravel {
@@ -788,8 +756,8 @@ a {
     color: #B2D235; }
 
   .hapolearn-card-text {
-    margin-top: 10px;
-    font: normal 14px "UTM BryantLG";
+    padding: 0 16px;
+    font: bold 14px "UTM BryantLG";
     line-height: 20px;
     color: #505353; }
 
@@ -801,16 +769,17 @@ a {
     color: #FFFFFF; }
 
   .hapo-other-subject {
-    margin-top: 50px;
+    margin-top: -60px;
     padding: 0 50px; }
+    .hapo-other-subject .hapo-title {
+      margin-left: 0; }
 
   .hapolearn-othercourses {
     align-items: center; }
     .hapolearn-othercourses .subject-courses {
       margin-bottom: 30px; }
       .hapolearn-othercourses .subject-courses .hapolearn-subject {
-        border-radius: 15px 15px 0 0;
-        height: 45%; }
+        border-radius: 15px 15px 0 0; }
       .hapolearn-othercourses .subject-courses .subject-css {
         padding: 30px 55px 29px 57px; }
       .hapolearn-othercourses .subject-courses .subject-rails {
@@ -820,51 +789,64 @@ a {
 
   .hapo-all-courses {
     letter-spacing: -0.02em;
-    font: bold 28px "UTM BryantLG";
-    line-height: 34px;
+    font: bold 22px "UTM BryantLG";
+    line-height: 27px;
     color: #90AB26; }
     .hapo-all-courses img {
-      width: 34px;
-      height: 19px; }
+      width: 31px;
+      height: 16px; }
 
   .hapo-banner-space {
     height: 310px; }
 
   .hapo-feedback-des {
-    font-size: 16px;
-    line-height: 20px;
-    padding: 0 55px; }
+    font-size: 16px !important;
+    line-height: 20px !important;
+    padding: 0 30px !important; }
 
   .feedback-detail {
-    margin-top: -45px; }
+    margin-top: -45px !important; }
     .feedback-detail .feedback-des {
-      padding: 19px 5px 30px 34px; }
+      padding-top: 15px !important; }
 
-  .feedback-comment .comment-content p {
-    font-size: 14px;
-    line-height: 17px; }
+  .feedback-comment {
+    margin: 10px 10px !important; }
+    .feedback-comment:after {
+      top: 62% !important; }
+    .feedback-comment:before {
+      top: 62% !important; }
+    .feedback-comment .comment-content p {
+      font-size: 14px !important;
+      line-height: 17px !important; }
 
   .control-next {
-    margin-top: -220px; }
+    margin-top: -220px !important; }
     .control-next .next-left {
-      margin-left: 10px; }
+      margin-left: -10px !important;
+      margin-top: 25px !important; }
     .control-next .next-right {
-      margin-right: -18px; }
+      margin-right: -10px !important;
+      margin-top: 25px !important; }
 
   .control-next i {
-    width: 25px;
-    height: 25px;
-    padding-top: 2px; }
+    width: 30px !important;
+    height: 30px !important; }
 
   .user-information .user-name {
-    font-size: 16px;
-    line-height: 20px; }
+    font-size: 16px !important;
+    line-height: 20px !important; }
   .user-information h4 {
-    font-size: 14px;
-    line-height: 17px; }
+    font-size: 14px !important;
+    line-height: 17px !important; }
 
-  .feedback-user img {
-    width: 45px;
-    height: 45px; } }
+  .feedback-user {
+    margin-left: 50px !important; }
+    .feedback-user img {
+      width: 45px !important;
+      height: 45px !important; }
+
+  .message-open {
+    width: 50px;
+    height: 50px; } }
 
 /*# sourceMappingURL=style.css.map */

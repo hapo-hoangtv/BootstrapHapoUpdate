@@ -17,14 +17,14 @@ body {
   font-family: "UTM BryantLG";
   font-style: normal;
   font-weight: normal;
-  src: url("/font/UTMBryantLG.ttf");
+  src: url("../font/UTMBryantLG.ttf");
 }
 
 @font-face {
-  font-family: "Open Sans" sans-serif;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
-  src: url("/font/OpenSans-Bold.ttf");
+  src: url("../font/OpenSans-Regular.ttf");
 }
 
 * {
