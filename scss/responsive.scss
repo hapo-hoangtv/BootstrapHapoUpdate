@@ -127,16 +127,18 @@
 
   .hapo-question {
     .question-logo {
-      margin-top: -145px;
+      margin-top: -135px;
     }
 
     .hapo-question-why {
       margin-top: 20px;
+      margin-left: 200px;
       @include font(bold, 50px, "UTM BryantLG", 61px, $main_footer_color);
     }
 
     .hapo-question-body {
-      margin-top: -40px;
+      margin-top: 50px;
+      margin-bottom: 20px;
       text-align: center;
       @include font(normal, 16px, "UTM BryantLG", 35px, $main_footer_color);
 
@@ -149,8 +151,7 @@
       transform: scale(1.1);
       position: relative;
       right: 20px;
-      margin-top: -40px;
-      margin-bottom: 20px;
+      margin-top: 20px;
     }
   }
   //end question
@@ -409,7 +410,8 @@
 
     .hapo-question-why {
       margin-bottom: 15px;
-      @include font(bold, 38px, "UTM BryantLG", 40px, $main_footer_color);
+      padding: 10px 0;
+      @include font(bold, 37px, "UTM BryantLG", 40px, $main_footer_color);
     }
 
     .question-logo {
